@@ -1,5 +1,6 @@
-custom-shader = ./cursor_warp.glsl
-env = XDG_CONFIG_HOME=/Users/cedric/.config
+#command = "/usr/bin/nu"
+#custom-shader = ./cursor_warp.glsl
+#env = XDG_CONFIG_HOME=/Users/cedric/.config
 
 window-save-state = always
 
@@ -8,23 +9,15 @@ font-family-italic="Berkeley Mono Oblique"
 font-family-bold="Berkeley Mono Bold"
 font-family-bold-italic="Berkeley Mono Bold Oblique"
 
-font-size=14
+font-size=9
 
-
-#theme="Iceberg Dark"
-#theme="Kanagawa Dragon"
-#theme="Catppuccin Mocha"
-#theme="Gruvbox Material"
-#theme="Gruvbox Dark Hard"
-theme="anysphere"
-
-
+theme="Gruvbox Dark"
 
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 
-macos-titlebar-style="hidden"
+#macos-titlebar-style="hidden"
 #macos-titlebar-style="tabs"
 #window-decoration="auto" 
 
