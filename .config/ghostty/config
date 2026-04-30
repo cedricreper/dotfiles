@@ -1,5 +1,4 @@
-#command = "/usr/bin/nu"
-#custom-shader = ./cursor_warp.glsl
+command = "/usr/bin/nu"
 #env = XDG_CONFIG_HOME=/Users/cedric/.config
 
 window-save-state = always
