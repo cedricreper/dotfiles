@@ -1,0 +1,18 @@
+-- mini.nvim first so mini.icons is available for other plugins (e.g. oil)
+require 'plugins.mini'
+require 'plugins.colorscheme'
+
+require 'plugins.gitsigns'
+require 'plugins.oil'
+require 'plugins.autopairs'
+require 'plugins.blink-cmp'
+require 'plugins.flash'
+require 'plugins.conform'
+require 'plugins.telescope'
+require 'plugins.harpoon'
+require 'plugins.snacks'
+require 'plugins.tabout'
+require 'plugins.tiny-inline-diagnostic'
+require 'plugins.sleuth'
+require 'plugins.tmux-navigator'
+require 'plugins.treesitter'

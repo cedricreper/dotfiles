@@ -16,15 +16,17 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
 $env.PATH = (
     $env.PATH | split row (char esep)
     | prepend [
-        "/opt/homebrew/bin"
-        "/opt/homebrew/sbin"
+        ".local/bin"
         "/usr/local/bin"
+        "/usr/bin"
+        "/bin"
         ($env.HOME | path join ".cargo/bin")
         ($env.HOME | path join ".local/bin")
-        ($env.HOME | path join "dev/zig-aarch64-macos-0.16.0")
+ ($env.HOME | path join "dev/zig-x86_64-linux-0.16.0")
     ]
     | uniq
 )
@@ -35,9 +37,10 @@ $env.VISUAL = "nvim"
 $env.BAT_PAGER = ""   # disables the pager entirely
 $env.BAT_THEME = "gruvbox-dark"
 
-$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
-mkdir $"($nu.cache-dir)"
-carapace _carapace nushell | save --force $"($nu.cache-dir)/carapace.nu"
+# todo install carapace
+# $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
+# mkdir $"($nu.cache-dir)"
+# carapace _carapace nushell | save --force $"($nu.cache-dir)/carapace.nu"
 
 # ${UserConfigDir}/nushell/config.nu
-source $"($nu.cache-dir)/carapace.nu"
+# source $"($nu.cache-dir)/carapace.nu"

@@ -1,0 +1,505 @@
+nvim .config/ghostty/config
+exit
+ls
+clear
+ls
+config nu
+nvim .config/nushell/env.nu
+cd dotfiles/
+git push origin
+git push
+git config --list
+z
+cd ..
+ssh-keygen -t ed25519 -C "cedric.reper@gmail.com"
+eval "$(ssh-agent -s)"
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+ls .ssh/
+ssh-copy-id cedric@192.168.210.169
+ssh 'cedric@192.168.210.169'
+nvim ~/.ssh/config
+ssh mpb
+ssh mbp
+nvim .ssh/config
+ssh mbp
+sudo nvim /etc/ssh/ssh_config
+ssh mbp
+nvim .ssh/config
+ssh mbp
+exit
+ssh mbp
+ping google.com
+clear
+nvim .ssh/config
+ssh mbp
+ssh -vvv mbp
+ssh -vvv cedric@192.168.210.169
+ping 192.168.210.169
+ssh mbp
+clear
+ssh -vvv cedric@192.168.210.169
+nvim .ssh/config
+ssh -vvv cedric@192.168.210.169
+nvim .ssh/config
+ssh mbp
+ssh -vvv cedric@192.168.210.169
+ping 192.168.210.169
+ssh mbp
+ssh cedric@192.168.210.169
+ssh mbp
+clear
+ssh cedric@mbp.local
+ls
+rm -rf dotfiles/
+mkdir .dotfiles
+cd .dotfiles/
+mkdir nvim
+mkdir hypr
+mkdir vim
+mkdir nushell
+mkdir ghostty
+mkdir tmux
+mkdir starship
+git init --bare
+cd ..
+config nu
+exit
+dot config --local status.showUntrackedFiles no
+dot -- config --local status.showUntrackedFiles no
+config nu
+exit
+dot config --local status.showUntrackedFiles no
+exit
+dot config --local status.showUntrackedFiles no
+dot config "--local" status.showUntrackedFiles no
+cat ~/.dotfiles/config
+dot remote add origin git@github.com:cedricreper/dotfiles.git
+dot add .config/hypr/
+dot add ~/.config/hypr/
+git --git-dir=($"($env.HOME)/.dotfiles") --work-tree=$env.HOME status
+ls .dotfiles/
+git --git-dir=$"($env.HOME)/.dotfiles" --work-tree=$env.HOME status
+ls ~/.dotfiles
+rm -rf ~/.dotfiles/hypr ~/.dotfiles/nushell ~/.dotfiles/nvim ~/.dotfiles/ghostty ~/.dotfiles/starship ~/.dotfiles/tmux ~/.dotfiles/vim
+cat ~/.dotfiles/config
+cat .dotfiles/
+ls .dotfiles/
+git --git-dir=/home/cedric/.dotfiles --work-tree=/home/cedric status
+config nu
+dot status
+config nu
+exit
+dot status
+ls
+dot add ~/.config/hypr/
+dot add ($env.HOME + "/.config/hypr/")
+dot commit -m "initial dotfiles"
+dot commit "-m" "initial dotfiles"
+dot remote add origin git@github.com:cedricreper/dotfiles.git
+dot push "-u" origin master
+ssh mbp
+clear
+ssh mbp
+ssh -vvv cedric@192.168.210.169
+nvim .vimrc
+config nu
+exit
+config nu
+gap
+dot git add -p
+ssh mbp
+dot pull
+cat .config/ghostty/config
+mv .config/ghostty/config .config/ghostty/config-bak
+dot pull
+dot checkout HEAD~1 -- .config/hypr/
+dot stash
+ls .config/hypr
+dot checkout HEAD~1 -- .config/hypr/
+dot checkout "HEAD~1" ".config/hypr/"
+ls .config/hypr
+ls .config/ghostty/
+exit
+exit
+dot add /home/cedric/.config/hypr/
+dot add /home/cedric/.config/ghostty/
+dot commit "-m" "update dotfiles"
+dot push
+cd .config/ghostty/
+ls
+rm *.glsl
+ls
+nvim config
+exit
+dot add /home/cedric/.config/ghostty/
+dot commit "-m" "remove power hungry shadders"
+config nu
+nvim .config/nvim/lua/plugins/all-themes.lua
+z
+nvim .config/hypr/bindings.conf.bak
+rm .config/hypr/bindings.conf.bak
+nvim .config/hypr/looknfeel.conf
+z
+clear
+nvim .config/ghostty/config
+exit
+clear
+nvim .config/ghostty/config
+exit
+clear
+:q
+exit
+clear
+exit
+clear
+exit
+cd /usr/share/applications/
+ls
+rm system-config-printer.desktop
+sudo rm system-config-printer.desktop
+cat nvim.desktop
+exit
+nvim .config/tmux/tmux.conf
+ls
+ls Downloads/
+npm install -g @anthropic/claude-cli
+exit
+npm install -g @anthropic/claude-cli
+curl -fsSL https://claude.ai/install.sh | bash
+claude --help
+ls
+cd .dotfiles/
+claude
+exit
+cd ~/.config/omarchy/backgrounds/
+cd ~/.config/omarchy/
+ls
+cd themes
+ls
+cd ..
+ls
+cat current
+ls current/
+cd ..
+ls
+cd omarchy/
+ls
+mkdir backgrounds
+mkdir backgrounds/gruvbox
+cd backgrounds/gruvbox/
+mv ~/Downloads/a_street_with_buildings_and_a_street_lamp.png stree_lamp.png
+ls
+mv ~/Downloads/a_close_up_of_a_circuit_board.png circuit.png
+mv ~/Downloads/a_string_of_lights_with_a_light_bulb.jpg light_bub.png
+exit
+mv .config/omarchy/backgrounds/gruvbox/stree_lamp.png .config/omarchy/backgrounds/gruvbox/street_lamp.png
+exit
+ls .local/share/
+cat ~/.local/state/nvim
+ls ~/.local/state/nvim
+nvim .config/tmux/
+history
+dot fetch origin master
+dot merge origin/master
+nvim .config/nushell/config.nu
+rm .config/nushell/config.nu
+cat .config/nushell/env.nu
+rm .config/nushell/env.nu
+dot merge origin/master
+nvim .config/nushell/config.nu
+nvim .config/nushell/env.nu
+source .config/nushell/env.nu
+cargo install carapace-bin
+curl -Lo carapace.tar.gz https://github.com/carapace-sh/carapace-bin/releases/latest/download/carapace-bin_linux_amd64.tar.gz
+ls
+tar -xzf carapace.tar.gz
+rm carapace.tar.gz
+ls
+config nu
+nvim .config/nushell/env.nu
+source .config/nushell/env.nu
+source .config/nushell/config.nu
+config nu
+source .config/nushell/config.nu
+nvim .config/nushell/env.nu
+nvim .config/nushell/config.nu
+nvim .config/nushell/starship.nu
+starship init nu | save --force ~/.config/nushell/starship.nu
+source .config/nushell/config.nu
+rm .config/nushell/starship.nu
+starship init nu | save --force ~/.config/nushell/starship.nu
+nvim .config/nushell/starship.nu
+source .config/nushell/config.nu
+nvim .config/nushell/starship.nu
+exit
+source .config/nushell/config.nu
+z
+nvim .config/starship.toml
+ls
+c
+mkdir dev
+cd dev
+mkdir zlox
+z Download
+ls
+tar -xf zig-x86_64-linux-0.16.0.tar.xz
+mv zig-x86_64-linux-0.16.0 ~dev/
+mv zig-x86_64-linux-0.16.0 ~dev/zig-x86_64-linux-0.16.0
+cd ..
+cd dev
+mv ~/Downloads/zig-x86_64-linux-0.16.0 
+mv ~/Downloads/zig-x86_64-linux-0.16.0 ./
+ls
+config nu
+env
+nvim .config/nushell/env.nu
+z
+nvim .config/nushell/env.nu
+source .config/nushell/env.nu
+zig version
+z dev
+git clone https://github.com/zigtools/zls
+rm -rf zls/
+git clone --branch 0.16.x https://github.com/zigtools/zls
+cd zls
+zig build -Doptimize=ReleaseSafe
+mv zig-out/bin/zls ~/.local/bin/
+zls
+c
+z
+nvim .config/starship.toml
+clear
+nvim .config/ghostty/config
+nvim .config/hypr/looknfeel.conf
+nvim .config/ghostty/config
+exit
+env nu
+exit
+nvim .config/ghostty/config
+nvim .config/hypr/hyprland.conf
+nvim .config/hypr/xdph.conf
+nvim .config/hypr/looknfeel.conf
+hyprctl reload
+grep -r "opacity" ~/.local/share/omarchy/ ~/.config/hypr/ ~/.config/omarchy/ 2>/dev/null
+nvim .config/hypr/looknfeel.conf
+dot add .config/hypr/
+dot commit -m "update hypr"
+ls
+nvim .config/vim/vimrc.bak
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+sudo pacman -S neovim
+nvim --version
+nvim
+ls
+clear
+btop
+clear
+exit
+df
+btop
+exit
+mv ~/Downloads/wallpapers/1693926506886224.png .config/omarchy/backgrounds/gruvbox/retro-ball.png
+mv ~/Downloads/wallpapers/4070541.jpg .config/omarchy/backgrounds/gruvbox/gradient-1
+mv ~/Downloads/wallpapers/1737230486214990.jpg .config/omarchy/backgrounds/gruvbox/planet.jpg
+mv ~/Downloads/wallpapers/1747342805882384.jpg .config/omarchy/backgrounds/gruvbox/dune.jpg
+mv ~/Downloads/wallpapers/wp11455987.png .config/omarchy/backgrounds/gruvbox/best-gradient.png
+rm -rf Downloads/wallpapers/
+ls
+mv .config/omarchy/backgrounds/gruvbox/gradient-1 .config/omarchy/backgrounds/gruvbox/gradient-1.png
+nvim .config/hypr/monitors.conf
+hyprctl monitors
+cat ~/.config/hypr/hyprcursor.conf
+grep -r "cursor" ~/.config/hypr/
+cat ~/.config/hypr/hyprland.conf | grep -i file
+exit
+nvim .config/hypr/bindings.conf
+bluetoothctl
+zsh
+bluetoothctl
+bluetui 
+ls /var/lib/bluetooth/
+sudo ls /var/lib/bluetooth/
+sudo systemctl restart bluetooth
+sudo pacman -S bluez bluez-utils
+bluetoothctl
+sudo systemctl stop bluetooth
+sudo rm -r /var/lib/bluetooth/*
+sudo ls /var/lib/bluetooth/
+sudo systemctl stop bluetooth
+sudo rm -r /var/lib/bluetooth/4C:32:75:9F:4E:20
+sudo systemctl start bluetooth
+sudo ls /var/lib/bluetooth/
+cd dev
+ls
+rmdir zlox
+git clone https://github.com/cedricreper/zlox
+git clone git@github.com:cedricreper/zlox.git
+ls
+z
+cd .config
+ls
+mkdir nvim
+cd nvim
+cd ..
+nvim .config/hypr/
+cd
+nvim .config/hypr/input.conf
+q
+z
+nu config
+config nu
+q
+exit
+nvim .config/nvim
+cd .config/nvim
+ls
+touch init.lua
+mkdir lua
+touch .stylua.toml
+nvim .stylua.toml
+mkdir lua/config
+mkdir lua/plugins
+dot add .config/nvim
+z
+dot add .config/nvim
+dot commit -m "add nvim"
+dot add .config/hypr/
+dot commit -m "update hypr"
+dot push
+cat /sys/class/power_supply/BAT0/energy_full
+upower -i /org/freedesktop/UPower/devices/battery_BAT0
+Your correction, refined:<\n><\n>    ✔️ intel-media-driver supports Broadwell, but i965 (libva-intel-driver) is often more stable in practice<\n><\n>    ✔️ Installing both drivers is fine; you can choose via LIBVA_DRIVER_NAME<\n><\n>    ⚠️ gfx.webrender.all = true can help, but:<\n><\n>        may already be enabled<\n><\n>        isn’t required for video decoding<\n><\n>        can cause issues on older hardware<\n>
+c
+sudo pacman -S libva libva-intel-driver libva-utils
+vainfo
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 firef
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 firefox
+sudo pacman -S intel-gpu-tools
+man mkdir
+nvim .local/bin/firefox
+chmox +x .local/bin/firefox
+chmod +x .local/bin/firefox
+echo $PATH
+echo $env.PATH
+config nu
+nvim .config/nushell/env.nu
+echo $env.PATH
+cp /usr/share/applications/firefox.desktop ~/.local/share/applications/
+nvim ~/.local/share/applications/firefox.desktop
+ls .local/share/applications/
+nvim ~/.local/share/applications/firefox.desktop
+update-desktop-database ~/.local/share/applications
+sudo pacman -S intel-gpu-tools
+intel_gpu_top
+sudo intel_gpu_top
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 firefox
+sudo intel_gpu_top
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 firefox
+bluetoothctl
+firefox
+which firefox
+nvim .local/bin/firefox
+exit
+sudo intel_gpu_top
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 LIBVA_MESSAGING_LEVEL=1 firefox 2>&1 | grep -iE "va|vaapi|decode|drm"
+ls -la /dev/dri/
+ls -la /dev/dri/card1
+LIBVA_DRIVER_NAME=i965 vainfo --display drm --device /dev/dri/renderD128
+sudo intel_gpu_top
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 LIBVA_MESSAGING_LEVEL=1 firefox out+err> /tmp/ff.log
+grep -iE "vaapi|va-api|va api|decode|drm|renderD" /tmp/ff.log | head -50
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 LIBVA_MESSAGING_LEVEL=1 MOZ_LOG="PlatformDecoderModule:5,VideoDecoder:5,MediaFormatReader:5" firefox out+err> /tmp/ff.log
+grep -iE "vaapi|va|h264|decode|hardware|software" /tmp/ff.log | head -80
+wc -l /tmp/ff.log
+bluetoothctl
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 MOZ_LOG="PlatformDecoderModule:5" MOZ_LOG_FILE=/tmp/fflog firefox
+ls /tmp/fflog*
+grep -iE "vaapi|hardware|software|h264" /tmp/fflog.moz_log
+LIBVA_DRIVER_NAME=i965 MOZ_ENABLE_WAYLAND=1 MOZ_LOG="PlatformDecoderModule:5" MOZ_LOG_FILE=/tmp/fflog firefox
+grep -iE "vaapi|hardware|software|h264" /tmp/fflog.moz_log
+sudo intel_gpu_top
+media.ffmpeg.vaapi-drm-display.enabled
+LIBVA_DRIVER_NAME=iHD MOZ_ENABLE_WAYLAND=1 firefox
+exit
+sudo pacman -Rns intel-gpu-tools
+nvim .config/hypr/bindings.conf
+grep -rn "SUPER.*,.*L," ~/.config/hypr/
+grep -rn "togglesplit\|dwindle\|layoutmsg" ~/.config/hypr/
+grep -n "movefocus" ~/.config/hypr/bindings.conf
+hyprctl reload
+grep -rn "SUPER" ~/.config/hypr/ | grep -i ", L,"
+nvim .config/hypr/bindings.conf
+find ~/.config/hypr/ -name "*.conf" | xargs grep -l "L,"
+grep -rn "source" ~/.config/hypr/
+grep -n "L," ~/.local/share/omarchy/default/hypr/bindings/tiling-v2.conf
+nvim .config/hypr/bindings.conf
+hyprctl reload
+dot add .config/hypr/
+dot commit -m "update hypr"
+dot push
+z config
+cd nvim
+ls
+cd ..
+ls
+cd tmux/
+ls
+nvim tmux.conf
+nvim tmux.conf.
+nvim tmux.conf.bak
+cd ..
+nvim ghostty/config
+nvim nvim/init.lua
+ls
+cd nvim
+ls
+cd lua
+ls
+nvim config/autocomands.lua
+nvim config/keymaps.lua
+nvim config/options.lua
+ls
+cd ..
+ls
+nvim init.lua
+cd lua/config/
+mv autocomands.lua autocommands.lua
+nvim keymaps.lua
+cd lua/
+ls
+cd ..
+ls
+cd plugins/
+ls
+cd ..
+ls
+cd ..
+ls
+nvim init.lua
+cd lua/plugins/
+ls
+touch gitsigns.lua
+nvim gitsigns.lua
+cd ..
+ls
+cd plugins
+nvim gitsigns.lua
+cd ..
+ls
+nvim init.lua
+ls lua
+nvim init.lua
+amp
+amp login
+nvim init.lua
+nvim lua/plugins/oil.lua
+z zlog
+z zlox
+z
+nvim dev/zlox/
+dot add .config/ghostty/
+dot add .config/nvim/

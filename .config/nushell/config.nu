@@ -25,6 +25,8 @@ $env.config.edit_mode = "vi"
 def --wrapped dot [...args: string] {
   run-external "git" $"--git-dir=($env.HOME)/.dotfiles" $"--work-tree=($env.HOME)" ...$args
 }
+
+alias q = exit
 alias e = exit
 alias c = clear
 alias vim = nvim
@@ -93,8 +95,8 @@ def tz [] {
 alias cat = bat
 
 # fzf/zoxide scripts
-source ~/scripts/fzf_listoldfiles.nu
-source ~/scripts/zoxide_openfiles_nvim.nu
+# source ~/scripts/fzf_listoldfiles.nu
+# source ~/scripts/zoxide_openfiles_nvim.nu
 
 # open man page via fzf
 def fman [] {

@@ -15,15 +15,19 @@ theme="Gruvbox Dark"
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
+quit-after-last-window-closed = true
 
 #macos-titlebar-style="hidden"
 #macos-titlebar-style="tabs"
 #window-decoration="auto" 
 
 auto-update-channel = tip
+copy-on-select = clipboard
+focus-follows-mouse = true
+font-thicken = true
 
 window-padding-x = 5
-window-padding-y = 0
+window-padding-y = 10
 window-padding-balance = true
 window-padding-color = extend
 adjust-cell-height = 0
