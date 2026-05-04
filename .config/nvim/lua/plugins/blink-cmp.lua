@@ -7,12 +7,12 @@ require('blink.cmp').setup({
     signature = { enabled = true },
     keymap = {
         preset = "default",
-        ["<C-space>"] = {},
-        ["<C-p>"] = {},
+        ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
         ["<Tab>"] = {},
         ["<S-Tab>"] = {},
-        ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
-        ["<C-n>"] = { "select_and_accept" },
+        ["<C-y>"] = { "select_and_accept" },
+        ["<C-n>"] = { "select_next", "fallback" },
+        ["<C-p>"] = { "select_prev", "fallback" },
         ["<C-k>"] = { "select_prev", "fallback" },
         ["<C-j>"] = { "select_next", "fallback" },
         ["<C-b>"] = { "scroll_documentation_down", "fallback" },
@@ -41,5 +41,5 @@ require('blink.cmp').setup({
         },
     },
 
-    sources = { default = { "lsp" } },
+    sources = { default = { "lsp", "buffer" } },
 })

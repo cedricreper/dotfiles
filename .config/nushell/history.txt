@@ -503,3 +503,157 @@ z
 nvim dev/zlox/
 dot add .config/ghostty/
 dot add .config/nvim/
+dot add .config/nushell/
+dot commit -m "updates & nvim 0.12"
+dot push
+amp
+tmux
+tz
+config nu
+exit
+tz
+ls
+cd dev
+mkdir zig
+mv ~/dev/zlox ~/dev/zig/zlox
+tz
+bluetoothctl list
+sudo pacman -S bluez bluez-utils
+sudo systemctl enable bluetooth
+sudo systemctl restart bluetooth
+bluetoothctl list
+bluetoothctl
+nvim .config/ghostty/config
+z
+nvim
+nvim .config/ghostty/config
+exit
+ls
+neofetch
+nfetch
+mkdir .config/omarchy/backgrounds/catppuccin
+mv Downloads/arch-black-4k.png .config/omarchy/backgrounds/catppuccin/arch.png
+exit
+ls
+cd .config
+ls
+z microsoft-edge-dev/
+ls
+cd NativeMessagingHosts/
+ls
+cd ..
+ls
+ls opencode/
+cat opencode/opencode.json
+cd omarchy/
+ls
+ls themes
+ls branding
+nvim branding/about.txt
+cat branding/screensaver.txt
+ls
+cat current/theme.name
+clear
+ls
+cat hooks/battery-low.sample
+cat hooks/font-set.sample
+cat hooks/post-update.sample
+ls
+cd ..
+ls
+cd ..
+ls
+sudo nvram SystemAudioVolume=%80
+cd dev
+ls
+touch mute.sh
+nvim mute.sh
+chmod +x mute.sh
+mute
+sh mute.sh
+sudo mute.sh
+sudo sh mute.sh
+rm mute.sh
+ls
+screenfetch
+cmatrix
+exit
+sudo pacman -Rns libva-intel-driver libva-utils
+rm .local/bin/firefox
+rm ~/.local/share/applications/firefox.desktop
+cp /usr/share/applications/firefox.desktop ~/.local/share/applications/
+nvim ~/.local/share/applications/firefox.desktop
+update-desktop-database ~/.local/share/applications
+vainfo
+bluetoothctl
+bluetui
+bluetui 
+sudo systemctl enable bluetooth
+systemctl status bluetooth
+exit
+systemctl is-enabled bluetooth
+sudo pacman -Rns firefox
+rm -rf .mozilla/ .cache/mozilla/
+sudo pacman -S firefox
+ls ~/.local/share/mozilla
+ls. .config/mozilla/
+ls .config/mozilla/
+sudo pacman -Rns firefox
+rm -rf .mozilla/ .cache/mozilla/ .config/mozilla/
+sudo pacman -S firefox
+cd .config/hypr
+amp
+exit
+sudo systemctl enable bluetooth
+systemctl is-enabled bluetooth
+sudo pacman -S linux-firmware
+sudo pacman -S bluez bluez-utils
+sudo nano /etc/bluetooth/main.conf
+sudo nvim /etc/bluetooth/main.conf
+sudo nano /etc/bluetooth/main.conf
+journalctl -u bluetooth -b
+sudo btmgmt phy
+sudo btmgmt le on
+cat /sys/class/bluetooth/hci0/../../../power/control
+<\n>cat /sys/class/bluetooth/hci0/../../../idVendor
+cat /sys/class/bluetooth/hci0/../../../idProduct
+cat /sys/class/bluetooth/hci0/../../../power/control
+echo 'on' | sudo tee /sys/class/bluetooth/hci0/../../../power/control
+cat /sys/class/bluetooth/hci0/../../../power/control
+echo 'on' | sudo tee /sys/class/bluetooth/hci0/../../../power/control
+sudo sh -c "echo on > /sys/class/bluetooth/hci0/../../../power/control"
+cat /sys/class/bluetooth/hci0/../../../power/control
+sudo systemctl restart bluetooth
+bluetoothctl
+hcitool rssi CF:A1:B0:41:BC:E2
+systemctl list-units | grep -i blue
+pacman -Q | grep -i blue
+systemctl list-units | grep -i elephant
+systemctl status elephant-bluetooth
+pacman -Ql elephant-bluetooth
+pacman -Qi elephant-bluetooth
+iwconfig
+iw dev
+lsusb -t
+cat /sys/class/bluetooth/hci0/../../../power/control
+sudo pacman -S usbutils
+lsusb -t
+bluetoothctl info CF:A1:B0:41:BC:E2<\n>bluetoothctl info EF:A4:7E:6D:78:60
+sudo btmgmt info | grep -i coex
+ls
+sudo pacman -Rs usbutils
+sudo pacman -S usbutils
+exit
+nvim .config/nvim/lua/plugins/blink-cmp.lua
+nvim .config/nvim/lua/plugins/colorscheme.lua
+amp t
+amp t continue T-019de729-70c4-72cf-aac0-c3ac5ad33a6
+z nvim
+amp t
+amp t continue T-019de729-70c4-72cf-aac0-c3ac5ad33a62
+nvim lua/plugins/colorscheme.lua
+exit
+lsblk
+exit
+ls
+git add .config/nvim/

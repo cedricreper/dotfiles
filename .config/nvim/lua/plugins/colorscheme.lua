@@ -20,4 +20,4 @@ require('catppuccin').setup({
     transparent_background = false,
 })
 
-vim.cmd.colorscheme('gruvbox')
+vim.cmd.colorscheme('catppuccin')

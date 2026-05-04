@@ -76,20 +76,27 @@ def gdiff [] {
 # tmux
 alias ta = tmux attach-session -t
 alias tls = tmux list-sessions
+
 def th [] {
-    tmux new-session -s h -c /Users/cedric/dev/hats
-    #tmux new-window -c /Users/cedric/dev/hats
-    #tmux split-window -h -c /Users/cedric/dev/hats
+    let dir = $"($env.HOME)/dev/hats"
+    tmux new-session -d -s h -c $dir
+    tmux new-window -t h -c $dir
+    tmux split-window -t h -h -c $dir
+    tmux attach -t h
 }
 
 def tui [] {
-    tmux new-session -s ui -c /Users/cedric/dev/ui
-    #tmux new-window -c /Users/cedric/dev/ui
-    #tmux split-window -h -c /Users/cedric/dev/ui
-
+    let dir = $"($env.HOME)/dev/ui"
+    tmux new-session -d -s ui -c $dir
+    tmux new-window -t ui -c $dir
+    tmux split-window -t ui -h -c $dir
+    tmux attach -t ui
 }
+
 def tz [] {
-    tmux new-session -s z -c /Users/cedric/dev/zig/zlox/
+    let dir = $"($env.HOME)/dev/zig/zlox/"
+    tmux new-session -d -s z -c $dir
+    tmux attach -t z
 }
 
 alias cat = bat
