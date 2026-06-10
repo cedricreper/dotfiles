@@ -73,3 +73,14 @@ vim.opt.guicursor = {
   'r:hor50-Cursor/lCursor-blinkwait100-blinkon100-blinkoff100',
 }
 
+-- Fix C buggy indentation
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'c', 'h' },
+  callback = function()
+    vim.bo.indentexpr = ''
+  end,
+})
+
+vim.filetype.add({
+  extension = { h = 'cpp' }
+})

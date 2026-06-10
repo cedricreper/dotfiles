@@ -1,23 +1,31 @@
 vim.pack.add({
     { src = "https://github.com/ellisonleao/gruvbox.nvim" },
-    { src = "https://github.com/catppuccin/nvim",         name = 'catppuccin' },
+    { src = "https://github.com/catppuccin/nvim",             name = 'catppuccin' },
+    { src = "https://github.com/miikanissi/modus-themes.nvim" },
 })
 
 require('gruvbox').setup({
-    bold = false,
-    italic = {
-        strings = false,
-        emphasis = false,
-        comments = true,
-        operators = false,
-        folds = false,
-    },
-    contrast = 'hard', -- can be "hard", "soft" or empty string
+    bold = true,
+    -- italic = {
+    --     strings = false,
+    --     emphasis = false,
+    --     comments = true
+    --     operators = false,
+    --     folds = false,
+    -- },
+    --    contrast = 'hard',
 })
 
 require('catppuccin').setup({
-    flavour = 'mocha',
-    transparent_background = false,
+    flavour = "auto", -- latte, frappe, macchiato, mocha
+    background = {    -- :h background
+        light = "latte",
+        dark = "mocha",
+    },
 })
 
-vim.cmd.colorscheme('catppuccin')
+require('modus-themes').setup({
+    style = 'auto',
+})
+
+vim.cmd.colorscheme('modus')

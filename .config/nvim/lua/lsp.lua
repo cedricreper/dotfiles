@@ -67,9 +67,9 @@ end
 
 -- Enable the configured servers (loaded from ~/.config/nvim/lsp/<name>.lua).
 vim.lsp.enable({
+    'asm',
     'lua_ls',
     'pyright',
-    'tailwindcss',
-    'ts_ls',
     'zls',
+    'clangd',
 })
